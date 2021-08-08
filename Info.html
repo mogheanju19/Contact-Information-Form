@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            margin: 15px;
+            padding: 10px 20px;
+            border: rgb(93, 1, 180) solid 2px;
+        }
+        form {
+            margin: 10px;
+            padding: 10px 20px;
+            border: rgb(93, 1, 180) solid 2px;
+        }
+        h1 {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+        a {
+            text-decoration: none;
+        }
+         .required {
+         color: red;
+          }
+
+label {
+  display: inline-block;
+  width: 130px;
+  vertical-align: top;
+}
+
+    </style>
+</head>
+
+<body>
+    <center>
+        
+        <h1>Contact Information</h1>
+    </center>
+
+<form action="./thankYou.html" style="background-color: blueviolet; color: white;">
+     
+   <table>
+
+
+<label for="Salutation">Salutation:<span class="required">*</span></label>
+<tr>
+<select name="salautation" id="salautation">
+ <option value="Select.">Select</option> 
+<option value="Mr.">Mr.</option>
+  <option value="Mrs.">Mrs.</option>
+  <option value="Ms.">Ms.</option>
+
+</select>
+</tr>
+
+
+            <tr>
+              <div class="control">
+                <td>First Name:<span class="required">*</span></td>
+                <td><input type="text" maxlength="30" placeholder="Enter first name" required >
+                </td>
+</div>
+            </tr>
+            <tr>
+<div class="control">
+                <td>Last Name:<span class="required">*</span></td>
+                <td><input type="text" maxlength="30" placeholder="Enter last name" required > 
+                </td>
+              </div>
+</tr>
+            <tr>
+
+<td>Date of Birth:</td>
+
+<td><input type="date" id="date" name="birth-date" value="2021-08-7"
+       min="1950-01-01" max="2050-12-31"></td>
+
+                
+            <tr>
+<div class="control">
+                <td>Email Id<span class="required">*</span></td>
+                <td><input type="email" name="" id="" placeholder="Enter email address" required></td>
+            </div>
+              </tr>
+            
+<tr>
+<div class="control">
+<td>Mobile number<span class="required">*</span></td>
+<td><input type="tel" id="mobile" name="mobile" placeholder="Enter your number.."required></td>
+</div>
+</tr>
+
+<tr>
+<td>Upload File</td>
+<td><input type="file" id="myFile" name="filename"></td>
+</tr>
+
+            <tr>
+                <td>Message</td>
+                <td>
+                    <textarea name="" id="" cols="30" rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+              
+        </table>
+        <center>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="button"><a href="./index.html">Reset</a></button>
+            </div>
+        </center>
+
+    </form>
+
+
+</body>
+
+</html>
